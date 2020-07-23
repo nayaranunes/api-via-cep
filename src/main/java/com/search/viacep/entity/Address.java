@@ -43,9 +43,6 @@ public class Address {
         this.gia = gia;
     }
 
-    public Address() {
-    }
-
     @Override
     public String toString() {
         return "Address{" +
