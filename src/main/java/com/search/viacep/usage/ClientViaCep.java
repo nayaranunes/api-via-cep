@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import javax.json.Json;
 import javax.json.JsonObject;
 
-@Service
 public class ClientViaCep {
     public static Address getAddressByCep(String cep) {
 
@@ -26,7 +25,8 @@ public class ClientViaCep {
                     jsonObject.getString("uf"),
                     jsonObject.getString("unidade"),
                     jsonObject.getString("ibge"),
-                    jsonObject.getString("gia"));
+                    jsonObject.getString("gia")
+            );
 
             return address;
 
